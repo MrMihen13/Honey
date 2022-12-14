@@ -21,6 +21,10 @@ a {
     margin: .6em 0;
     display: inline-block;
 }
+
+.site-header .site-identity .contact-logo img {
+    margin-bottom: 7%;
+}
   
   
 .site-navigation ul, 
@@ -58,3 +62,47 @@ a {
     font-size: 120%;
 }
 
+.conteiner .designer {
+    text-align: center;
+    font-size: 15px;
+    line-height: 15.2px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.textcols {
+    justify-content: center;
+	white-space: nowrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+.textcols-item h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.textcols-item p {
+    font-weight: 400;
+}
+
+.textcols-item-logo {
+	white-space: normal;	
+	display: inline-block;
+	vertical-align: top;
+    margin-left: 20%;
+}
+
+.textcols .textcols-item .logo {
+    align-items: center;
+}
+
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
