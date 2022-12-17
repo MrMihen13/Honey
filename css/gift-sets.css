@@ -1,0 +1,92 @@
+.table {
+    all: inherit;
+    background-color: #DFC698;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.cell-text {
+    font-size: 120%;
+    margin-right: 4%; 
+    margin-left: 5%;
+}
+
+.table-image {
+    width: 100%;
+    height: 100%;
+}
+
+.products {
+	list-style: none;
+	margin: 0 -20px 0 0;
+    margin-left: 10%;
+    margin-right: 10%;
+	padding: 0;
+}
+
+.product-wrapper {
+	display: block;
+	float: left;
+    width: 25%;
+}
+
+.product {
+	display: block;
+	border-radius: 3px;
+	position: relative;
+	background: #FFF6DA;
+	margin: 0 45px 150px 45px;
+	color: #474747;
+	z-index: 0;
+	height: 100%;
+}
+
+.product p {
+    text-align: center;
+	position: relative;
+    margin-top: 2%;
+    margin-bottom: 0%;
+	font-size: 1.7em;
+    font-weight: 500;
+    color: #A6741A;
+}
+
+.product h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.product-button {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.product-button a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: .3em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    background: #FFF6DA;
+    transition: 0.2s;
+}
+
+.product-button a:hover {
+    background: #DFC698; 
+}
+
+.product-button a:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+
+.product-photo {
+	position: relative;
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
