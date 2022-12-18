@@ -10,6 +10,35 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 
+  <script src="js/header.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () {
+              (m[i].a = m[i].a || []).push(arguments)
+          };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+              if (document.scripts[j].src === r) {
+                  return;
+              }
+          }
+          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(91745476, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true
+      });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/91745476" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
   <title>Наборы</title>
 </head>
 <body>
@@ -28,7 +57,15 @@
     <nav class="site-navigation">
       <ul class="nav">
         <li><a href="about-us.html">О нас</a></li>
-        <li class="current"><a href="sets.html">Католог</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn current">Каталог</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html#gifts">Подарочные наборы</a>
+              <a href="sets.html#honey">Мёд</a>
+            </div>
+          </div>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="delivery.html#feedback">Отзывы</a></li>
         <li><a href="#contacts">Контакты</a></li>
@@ -37,8 +74,21 @@
     </nav>
   </div>
 
-  <div>
-    <img src="images/sets/background.png" alt="">
+  <div class="content-cols">
+    <div class="content-col">
+      <div class="content">
+        <h1>Уникальный мёд Сибирских дикоросов с семейной пасеки</h1>
+        <p>
+          скидки 15% до 31 декабря
+        </p>
+        <div class="call-button">
+          <a href="https://forms.gle/hiMPnfRFtHsNUYfY8">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+    <div class="content-col">
+      <img src="images/sets/background-transformed.png" alt="">
+    </div>
   </div>
 </header>
 
@@ -80,7 +130,7 @@
 
   <div class="conteiner">
     <div class="title-center">
-      <h2>Наша продукция</h2>
+      <h2 id="honey">Наша продукция</h2>
     </div>
 
     <div class="conteiner">
@@ -90,11 +140,14 @@
           <div class="product">
             <img class="product-photo" src="images/sets/product1.jpg" alt="Липовый мед">
             <h3>Липовый мёд</h3>
+            <div class="description">
+              <p>
+                Липовый мёд создан для того, чтобы им наслаждались и неспеша
+                раскрывали все вкусы и грани его аромата за чашечкой чая!
+              </p>
+            </div>
             <p>400₽ / 350 гр</p>
             <p>800₽ / 900 гр</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
-            </div>
           </div>
         </li>
 
@@ -102,11 +155,13 @@
           <div class="product">
             <img class="product-photo" src="images/sets/product2.jpg" alt="">
             <h3>Таёжный дягилевый мёд</h3>
+            <div class="description">
+              <p>
+                Таёжный дягилевый мёд как терпкое вино, отлично подойдет в качестве основы к мясным соусам
+              </p>
+            </div>
             <p>350₽ / 350 гр</p>
             <p>700₽ / 900 гр</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
-            </div>
           </div>
         </li>
 
@@ -114,11 +169,14 @@
           <div class="product">
             <img class="product-photo" src="images/sets/product3.webp" alt="">
             <h3>Васильковый мёд</h3>
+            <div class="description">
+              <p>
+                Отлично подходит к чаю или как сладкая добавка к любому завтраку.
+                Незаменимый помощник в лечении детской простуды - вкус василькового мёда дети любят больше всего.
+              </p>
+            </div>
             <p>300₽ / 350 гр</p>
             <p>600₽ / 900 гр</p>
-            <div class="product-button">
-              <a href=""> Подробнее</a>
-            </div>
           </div>
         </li>
 
@@ -126,10 +184,12 @@
           <div class="product">
             <img class="product-photo" src="images/sets/product4.webp" alt="">
             <h3>Мёд с кедровыми орехами</h3>
-            <p>600₽ / 350 гр</p>
-            <div class="product-button">
-              <a href=""> Подробнее</a>
+            <div class="description">
+              <p>
+                Мёд акациевый натуральный, кедровые орехи.
+              </p>
             </div>
+            <p>600₽ / 350 гр</p>
           </div>
         </li>
 
@@ -137,10 +197,12 @@
           <div class="product">
             <img class="product-photo" src="images/sets/pruduct5.webp" alt="">
             <h3>Мёд с ореховым ассорти</h3>
-            <p>500₽ / 350 гр</p>
-            <div class="product-button">
-              <a href=""> Подробнее</a>
+            <div class="description">
+              <p>
+                Мёд акациевый натуральный, грецкий орех, кешью, фундук, миндаль.
+              </p>
             </div>
+            <p>500₽ / 350 гр</p>
           </div>
         </li>
 
@@ -148,10 +210,14 @@
           <div class="product">
             <img class="product-photo" src="images/sets/product6.webp" alt="">
             <h3>Мёд с сотами</h3>
-            <p>400₽ / 350 гр</p>
-            <div class="product-button">
-              <a href=""> Подробнее</a>
+            <div class="description">
+              <p>
+                Можно употреблять как сладкое лакомство или профилактическое средство.
+                Если у вас начинает першить в горле или появился насморк - есть отличный рецепт: жуйте соты каждый час
+                по 15 мин в течение дня и на следующий день вы проснетесь здоровыми!
+              </p>
             </div>
+            <p>400₽ / 350 гр</p>
           </div>
         </li>
       </ul>
