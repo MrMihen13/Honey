@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 
+  <script src="js/header.js"></script>
+
   <title>Наборы</title>
 </head>
 <body>
@@ -28,7 +30,15 @@
     <nav class="site-navigation">
       <ul class="nav">
         <li><a href="about-us.html">О нас</a></li>
-        <li class="current"><a href="sets.html">Католог</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn current">Каталог</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Подарочные наборы</a>
+              <a href="sets.html">Мёд</a>
+            </div>
+          </div>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="delivery.html#feedback">Отзывы</a></li>
         <li><a href="#contacts">Контакты</a></li>
