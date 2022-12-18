@@ -62,26 +62,9 @@
     margin-top: 2%;
 }
 
-.product-button a {
-    text-decoration: none;
-    display: inline-block;
+.product .description p {
+    font-size: 15px;
     color: black;
-    padding: .3em 2em;
-    outline: none;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20px;
-    background: #FFF6DA;
-    transition: 0.2s;
-}
-
-.product-button a:hover {
-    background: #DFC698;
-}
-
-.product-button a:active {
-    background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
 
 .product-photo {

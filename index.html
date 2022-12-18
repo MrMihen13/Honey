@@ -15,21 +15,31 @@
   <script src="js/header.js"></script>
 
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () {
+              (m[i].a = m[i].a || []).push(arguments)
+          };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+              if (document.scripts[j].src === r) {
+                  return;
+              }
+          }
+          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(91745476, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/91745476" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      ym(91745476, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true
+      });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/91745476" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 
   <title>Подарочные наборы</title>
 </head>
@@ -55,8 +65,8 @@
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn current">Каталог</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="index.html">Подарочные наборы</a>
-              <a href="sets.html">Мёд</a>
+              <a href="index.html#gifts">Подарочные наборы</a>
+              <a href="sets.html#honey">Мёд</a>
             </div>
           </div>
         </li>
@@ -123,7 +133,7 @@
 
   <div class="conteiner">
     <div class="title-center">
-      <h2>Подарки, которые запомнят</h2>
+      <h2 id="gifts">Подарки, которые запомнят</h2>
     </div>
 
     <div class="conteiner">
@@ -133,10 +143,17 @@
           <div class="product">
             <img class="product-photo" src="images/home/set1.jpg.webp" alt="">
             <h3>Вкусы меда</h3>
-            <p>1 390₽</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
+            <div class="description">
+              <p>
+                Состав: <br>
+                ~Васильковый мёд 350гр. <br>
+                ~Липовый мёд 350гр.<br>
+                ~Таёжным дягилевый мёд 350гр. <br>
+                ~Гречишный мёд 350гр.<br>
+                Набор упакован в крафтовую коробку. <br>
+              </p>
             </div>
+            <p>1 390₽</p>
           </div>
         </li>
 
@@ -144,10 +161,16 @@
           <div class="product">
             <img class="product-photo" src="images/home/set2.jpg" alt="">
             <h3>Популярный</h3>
-            <p>1 750₽</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
+            <div class="description">
+              <p>
+                Состав: <br>
+                ~Липовый мёд 350гр. <br>
+                ~Гречишный мёд 350гр. <br>
+                ~Мёд с сотами 350гр. <br>
+                ~Мёд с ореховым ассорти 350гр. <br>
+              </p>
             </div>
+            <p>1 750₽</p>
           </div>
         </li>
 
@@ -155,10 +178,16 @@
           <div class="product">
             <img class="product-photo" src="images/home/set3.webp" alt="">
             <h3>Уютный вечер</h3>
-            <p>1 200₽</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
+            <div class="description">
+              <p>
+                Состав набора: <br>
+                ~Баночка с васильковым мёдом 30мл.<br>
+                ~Баночка с таёжным мёдом 30мл.<br>
+                ~Баночка с мёдом из желтой акации 30мл.<br>
+                ~Набор из двух восковых свечей <br>
+              </p>
             </div>
+            <p>1 200₽</p>
           </div>
         </li>
 
@@ -166,10 +195,18 @@
           <div class="product">
             <img class="product-photo" src="images/home/set4.webp" alt="">
             <h3>Большой медовый в крафте</h3>
-            <p>3 900₽</p>
-            <div class="product-button">
-              <a href="">Подробнее</a>
+            <div class="description">
+              <p>
+                Состав: <br>
+                ~Васильковый мёд 900гр <br>
+                ~Липовый мёд 900гр. <br>
+                ~Таёжный дягилевый мёд 900гр <br>
+                ~Мёд с сотами 350гр. <br>
+                ~Мёд с ореховым ассорти 350гр. <br>
+                ~Мёд с кедровыми орехами 350гр. <br>
+              </p>
             </div>
+            <p>3 900₽</p>
           </div>
         </li>
 
